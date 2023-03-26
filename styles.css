@@ -1,0 +1,136 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+    background-image: url('/alexandar-todov-AMzC2RVurO4-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f2f2f2;
+    margin: 0;
+  }
+  
+  #app-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #timer {
+    font-size: 10rem;
+    margin-bottom: 20px;
+  }
+  
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    color: #fff;
+  }
+  
+  button:hover {
+    background-color: #f8eeee;
+  }
+  
+  .mode-switch {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+    color: #333;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+  
+  .mode-switch:hover {
+    background-color: #333;
+    color: #f2f2f2;
+  }
+  
+  .mode-icon {
+    /* add your icon styles here */
+    font-size: 1.5rem;
+  }
+  
+  /* default light mode */
+  .dark-mode #app-container{
+    background-color: #333333;
+    color: #f2f2f2;
+    background-image: url('/alexandar-todov-AMzC2RVurO4-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  /* dark mode styles */
+  .dark-mode body {
+    background-color: #333333;
+    color: #f2f2f2;
+  }
+  
+  .dark-mode #timer {
+    color: #f2f2f2;
+  }
+   
+  .dark-mode button {
+    background-color: #f2f2f2;
+    color: #333333;
+  }
+   
+  .dark-mode button:hover {
+    background-color: #404040;
+  }
+   
+  .dark-mode .mode-switch {
+    background-color: #333;
+    color: #f2f2f2;
+  }
+  
+  @media only screen and (max-width: 640px) {
+    #timer {
+      font-size: 5rem;
+    }
+    
+    button {
+      padding: 5px 10px;
+    }
+  
+    .mode-switch {
+      width: 30px;
+      height: 30px;
+      top: 5px;
+      right: 5px;
+    }
+  
+    .mode-icon {
+      font-size: 1rem;
+    }
+  }
+  
